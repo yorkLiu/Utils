@@ -16,7 +16,7 @@
     **参数说明**
     
     | 参数 | 说明|
-    | :---: | :---: |
+    | :--- | :---: |
     | -d, --dir| 视频下载存放在本地的路径, 默认为 "~/Downloads/"路径下|
     | -i| 不生成markdown file, 默认为 True|
     | --info| 生成markdown file, 默认为 False|
