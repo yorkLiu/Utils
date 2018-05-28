@@ -206,7 +206,7 @@ def download_to_local(course_creator_and_name, Cid, lessons, dir=None):
         name = unicode2string(name).encode('latin1', 'ignore').decode('utf-8','ignore')
         # name = unicode2string(name)
         name = '%d.%s' % (idx, name)
-        name = name.replace('/', '_') # convert '/' to '_'
+        name = name.replace('/', '_').replace('?', '').replace('!', '') # convert '/' to '_'
         filename = os.path.join(dir, '%s.%s' % (name, get_extension(url)))
         # urllib.urlretrieve(url, filename)
         videos.append((filename, url))
